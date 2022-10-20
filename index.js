@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 
 app.post('/webhook', (req, res) => {
   console.log({ body: req.body })
+  console.log({line_items: req.body.line_items})
 })
 
 console.log(process.env.PORT)
